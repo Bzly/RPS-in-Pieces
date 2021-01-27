@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.0.0-alpha.2
+@version     2.0.0-alpha.3
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -48,12 +48,13 @@ body[data-page="homepage"] .spotlight .container {
 body[data-page="homepage"] .spotlight .container .primary {
     padding-left: 2em;
     border-left: 1px solid #a9a9a9;
-    grid-row-gap: 0;
+    grid-row-gap: 1em;
     order: 2;
 }
 
-body[data-page="homepage"] .spotlight .container .primary li {
+body[data-page="homepage"] .spotlight .container .primary li:not(:first-of-type) {
     border-bottom: 1px solid #a9a9a933;
+    padding-bottom: 1em;
 }
 
 body[data-page="homepage"] .spotlight .container .secondary {
@@ -79,6 +80,23 @@ body[data-page="homepage"] .view_archive {
 /* /LATEST */
 .blog {
     max-width: 75%;
+}
+
+.blog .link_overlay {
+    height: 513px;
+}
+
+.blog .articles>li:not(:last-of-type) .excerpt {
+    border-bottom: 1px solid #a9a9a944;
+    padding-bottom: 2.5em;
+}
+
+.blog article .excerpt {
+    margin-top: 1em;
+}
+
+.blog .summary .excerpt:before {
+    margin-bottom: 1em;
 }
 
 
@@ -300,7 +318,7 @@ body {
     border-color: #161616;
 }
 
-:root {
+:root, #comments .container .post[data-user-type=supporter] {
     --color: #00866B
 }
 
@@ -308,7 +326,7 @@ body {
     --color: #9976E0;
 }
 
-#comments .container .post[data-user-type=supporter], .username .flair.supporter {
+.username .flair.supporter {
     --color: #64409d;
 }
 
