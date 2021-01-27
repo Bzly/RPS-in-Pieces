@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.0.0-alpha
+@version     2.0.0-alpha.1
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -12,6 +12,7 @@
 @-moz-document domain("rockpapershotgun.com") {
 
 /* SITEWIDE */
+
 .advert_container {
     display: none !important;
 }
@@ -64,7 +65,7 @@
 
     /* Logo */
     .logo {
-        background: url(https://i.imgur.com/zROy1SE.png) no-repeat;
+        background: url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/logo_new_dark.png') no-repeat;
         background-size: contain;
         height: 5.4em;
     }
@@ -185,7 +186,11 @@
     }
 
     .article_footer .author_bio .section_title {
-        margin: 0.3em 0 1em;
+        margin: 1em 0 1em;
+    }
+
+    .article_footer .author_bio .name {
+        margin: 0;
     }
 
     .article_footer #comments .section_title {
@@ -207,6 +212,7 @@
 
     
     /* Comments */
+
 
 
 /* FOOTER */
@@ -246,6 +252,47 @@
     transform: unset;
     display: grid;
     grid-template-columns: repeat(7,auto);
+}
+
+
+/* DARK MODE */
+body {
+	color: #a9a9a9;
+	background: #161616 url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat !important;
+}
+
+#content, .app_header, .app_footer {
+	background: #212121 url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat !important;
+    border-color: #161616;
+}
+
+:root {
+    --color: #00866B
+}
+
+.app_header .username .flair.supporter {
+    --color: #9976E0;
+}
+
+#comments .container .post[data-user-type=supporter], .username .flair.supporter {
+    --color: #64409d;
+}
+
+.app_header .nav_secondary a, .app_header .nav_primary a, .app_footer nav:not(.social_follow) a, .app_footer nav:not(.social_follow) button {
+    color: #a9a9a9;
+}
+
+.article_header .title, .summary .name, .summary .title, .page_title {
+    color: #bbb;
+}
+
+#content textarea {
+    background: #3d3d3d url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat;
+    color: #a9a9a9;
+}
+
+.blog article:not([data-article-type="features"]):not([data-article-type="reviews"]) .strapline {
+    color: #00866B;
 }
 
 }
