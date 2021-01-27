@@ -1,0 +1,247 @@
+/* ==UserStyle==
+@name        RPS In Pieces
+@namespace   Bzly
+@version     2.0.0a
+@homepageURL https://github.com/Bzly/RPS-in-Pieces
+@updateURL   https://stylishthemes.github.io/GitHub-Dark/github-dark.user.css
+@license     GPL-3.0-or-later
+@author      Bzly
+==/UserStyle== */
+
+/* SITEWIDE */
+
+.advert_container {
+    display: none !important;
+}
+
+.disclaimer, .nav_trending {
+    display: none;
+}
+
+#content {
+    max-width: 80em;
+    width: 82%;
+}
+
+.excerpt, .article_body_content > p, #comments .guidelines, .post.live .what {
+    text-align:justify;
+	hyphens: auto;
+	line-height:1.4;
+}
+
+.sidebar, .sidebar .gn_sidebar {
+    display: none !important;
+}
+
+#content_above {
+    padding-right: 0 !important;
+}
+
+
+/* /LATEST */
+.blog {
+    max-width: 75%;
+}
+
+
+/* HEADER */
+
+    /* Main header changes */
+    header.app_header {
+        height: 7em;
+    }
+
+    header.app_header > nav.nav_main {
+        width: 82%;
+        max-width: 80em;
+        padding: 0.8em 0;
+        grid-template-columns: 16.5em auto auto 1fr auto;
+        max-height: 7em;
+    }
+
+
+    /* Logo */
+    .logo {
+        background: url(https://i.imgur.com/zROy1SE.png) no-repeat;
+        background-size: contain;
+        height: 5.4em;
+    }
+
+    .logo > img {
+        visibility: hidden;
+    }
+
+
+    /* Nav */
+    .nav_primary a[href="/hardware"], .nav_primary a[href="/videos"], .nav_primary a[href="/guides"], .nav_secondary a[href="/topics/free-games"], .nav_secondary a[href="/deals"], .commercial.button_group a {
+        display: none;
+    }
+
+    .nav_main .commercial.button_group {
+        visibility: hidden;
+    }
+
+
+    /* Search and user profile */
+    nav.nav_main > .actions {
+        grid-template-columns: 1fr auto;
+        margin: auto 0;
+        grid-column-gap: 2em;
+    }
+
+    .nav_main .actions > form.search_box {
+        margin: auto;
+        width: 15em;
+    }
+
+    .nav_main form.logout .button_group {
+        display: block;
+    }
+
+    .nav_main form.logout .button {
+        padding: 0 0.5em;
+        border-radius: 4px;
+    }
+
+    .nav_main .user_profile.signed_in .label {
+        display: none;
+    }
+
+    .nav_main .actions .user_profile {
+        text-align: right
+    }
+
+    .nav_main .actions .username {
+        display: grid;
+    }
+
+
+/* ARTICLE */
+.article_body {
+    max-width: 69%;
+}
+
+.article_body_content {
+    margin: 2em auto;
+    margin-bottom: 1em;
+}
+
+.article_body_content p {
+    margin: 1em auto;
+}
+
+.article_header {
+    max-width: unset;
+    padding: 0 3em;
+    margin-top: 1em;
+    grid-row-gap: 1em;
+    grid-template-columns: 1fr auto;
+    grid-column-gap: 3em;
+}
+
+.details .strapline {
+    margin-top: 0.7em;
+}
+
+.bb_iawr ~ a.button {
+    background: unset;
+    padding: unset;
+}
+
+.bb_iawr {
+    margin: 0 !important;
+}
+
+    /* Article footer */
+    .article_footer {
+        display: grid;
+        margin: 0.2em auto;
+        max-width: 69%;
+        grid-template-columns: 100%
+    }
+
+    .article_footer .tagged_with {
+        margin: 0;
+        text-align: right;
+    }
+
+    .article_footer .tagged_with h2 {
+        display: none;
+    }
+
+    .article_footer .tagged_with ul {
+        float: right;
+        margin: 0;
+    }
+
+    .article_footer .tagged_with li:last-of-type a {
+        padding-right: 0;
+    }
+
+    .article_footer .tagged_with a {
+        padding: 0em 0.5em;
+    }
+
+    .article_footer .author_bio .section_title {
+        margin: 0.3em 0 1em;
+    }
+
+    .article_footer #comments .section_title {
+        margin: 2em 0 0.6em;
+    }
+
+    #comments .guidelines, #comments .container {
+        margin-bottom: 1em;
+    }
+
+    #content_below {
+        display: none;
+    }
+
+    .thread {
+        max-width: 100%;
+        width: unset;
+    }
+
+    
+    /* Comments */
+
+
+/* FOOTER */
+.app_footer, .nav_wrapper {
+    height: 14em;
+}
+
+.app_footer .nav_wrapper {
+    width: 82% !important;
+    max-width: 80em !important;
+    padding: 1.5em 1em;
+    grid-template-columns: 1fr 1fr 1fr auto !important;
+    grid-column-gap:5em !important;
+}
+.app_footer .nav_wrapper ul > li > a, .app_footer .nav_wrapper ul > li > button {
+    padding: 0.1em !important;
+}
+
+.app_footer .nav_sites, .app_footer .nav_events, .app_footer .about p {
+    display: none;
+}
+
+.app_footer .nav_helpful ul {
+    grid-template-columns: auto auto;
+    grid-column-gap: 2em;
+}
+
+.app_footer .about {
+    row-gap: 0;
+}
+
+.app_footer .about .logo {
+    margin-bottom: 0.8em;
+}
+
+.social_list {
+    transform: unset;
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+}
