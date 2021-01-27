@@ -6,10 +6,12 @@
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
 @author      Bzly
+@preprocessor uso
 ==/UserStyle== */
 
-/* SITEWIDE */
+@-moz-document domain("rockpapershotgun.com") {
 
+/* SITEWIDE */
 .advert_container {
     display: none !important;
 }
@@ -244,4 +246,6 @@
     transform: unset;
     display: grid;
     grid-template-columns: repeat(7,auto);
+}
+
 }
