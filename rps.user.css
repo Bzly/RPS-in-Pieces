@@ -291,7 +291,7 @@ body {
     color: #a9a9a9;
 }
 
-.blog article:not([data-article-type="features"]):not([data-article-type="reviews"]) .strapline {
+article:not([data-article-type="features"]):not([data-article-type="reviews"]) .strapline {
     color: #00866B;
 }
 
