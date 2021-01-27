@@ -4,3 +4,8 @@ An alternative stylesheet for Rock Paper Shotgun
 ## Installation
 1. Install a browser extension such as Stylus
 2. [Click me to add rps.user.css to Stylus!](https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css)
+
+## To-do
+* Work out how to do choice/configuration stuff, add options for: dark mode, text justification, line height
+* Sort out the article comment section
+* Do something to the homepage maybe?
