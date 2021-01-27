@@ -2,7 +2,7 @@
 An alternative stylesheet for Rock Paper Shotgun
 
 ## Installation
-1. Install a browser extension such as Stylus
+1. Install a browser extension such as Stylus \[[Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en), [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/)\]
 2. [Click me to add rps.user.css to Stylus!](https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css)
 
 ## To-do
