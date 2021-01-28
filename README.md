@@ -8,4 +8,5 @@ An alternative stylesheet for Rock Paper Shotgun
 ## To-do
 * Work out how to do choice/configuration stuff, add options for: dark mode, text justification, line height
 * Sort out the article comment section
+* Check mobile view (it's probably terrible) and add @media stylings as necessary
 * Do something to the homepage maybe?
