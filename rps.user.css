@@ -82,13 +82,17 @@ body[data-page="homepage"] .view_archive {
     max-width: 75%;
 }
 
+body[data-page="blog"] .page_title_wrapper {
+    display: none;
+}
+
 .blog .link_overlay {
     height: 513px;
 }
 
 .blog .articles>li:not(:last-of-type) .excerpt {
-    border-bottom: 1px solid #a9a9a944;
-    padding-bottom: 2.5em;
+    border-bottom: 1px solid #161616;
+    padding-bottom: 2em;
 }
 
 .blog article .excerpt {
@@ -307,7 +311,7 @@ body[data-page="homepage"] .view_archive {
 
 
 /* DARK MODE */
-body:not(.docked) {
+body {
 	color: #a9a9a9;
 	background: #161616 url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat !important;
 }
