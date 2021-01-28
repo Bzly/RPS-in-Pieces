@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.0.0-alpha.3
+@version     2.0.0-alpha.4
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -178,7 +178,6 @@ body[data-page="homepage"] .view_archive {
 
 .article_body_content {
     margin: 2em auto;
-    margin-bottom: 1em;
 }
 
 .article_body_content p {
@@ -308,7 +307,7 @@ body[data-page="homepage"] .view_archive {
 
 
 /* DARK MODE */
-body {
+body:not(.docked) {
 	color: #a9a9a9;
 	background: #161616 url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat !important;
 }
@@ -346,5 +345,5 @@ body {
 article:not([data-article-type="features"]):not([data-article-type="reviews"]) .strapline {
     color: #a9a9a9;
 }
-
+	
 }
