@@ -11,6 +11,11 @@
 
 @-moz-document domain("rockpapershotgun.com") {
 
+/* Colin is best */
+.article[data-paywalled="true"] .article_body_content::after {
+    background-image: linear-gradient(180deg,transparent,#212121);
+}
+
 /* SITEWIDE */
 .advert_container {
     display: none !important;
