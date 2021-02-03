@@ -470,6 +470,11 @@ article:not([data-article-type="features"]):not([data-article-type="reviews"]) .
 .article[data-paywalled="true"] .article_body_content::after {
     background-image: linear-gradient(180deg,transparent,#212121);
 }
+	
+.article_body_content figure figcaption {
+    color: #a9a9a9aa;
+    border-color: #555;
+}
 }
 	
 }
