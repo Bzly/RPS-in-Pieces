@@ -6,6 +6,7 @@
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
 @author      Bzly
+@preprocessor stylus
 
 @var checkbox darkMode "Dark Mode Enabled" 1
 ==/UserStyle== */
