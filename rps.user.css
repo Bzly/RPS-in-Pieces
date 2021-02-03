@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.0.0-alpha.7
+@version     2.0.0-alpha.8
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -114,7 +114,7 @@ body[data-page="blog"] .page_title_wrapper {
         width: 82%;
         max-width: 80em;
         padding: 0.8em 0;
-        grid-template-columns: 16.5em auto auto 1fr auto;
+        grid-template-columns: 16.5em auto 1fr auto;
         max-height: 7em;
     }
 
@@ -132,7 +132,7 @@ body[data-page="blog"] .page_title_wrapper {
 
 
     /* Nav */
-    .nav_primary a[href="/hardware"], .nav_primary a[href="/videos"], .nav_primary a[href="/guides"], .nav_secondary a[href="/topics/free-games"], .nav_secondary a[href="/deals"], .commercial.button_group a {
+    .nav_primary a[href="/hardware"], .nav_primary a[href="/videos"], .nav_primary a[href="/guides"], .nav_secondary a[href="/topics/free-games"], .nav_secondary a[href="/deals"], .commercial.button_group {
         display: none;
     }
 
@@ -172,6 +172,10 @@ body[data-page="blog"] .page_title_wrapper {
 
     .nav_main .actions .username {
         display: grid;
+    }
+
+    .nav_main form.search_box input {
+        color: var(--color);
     }
 
 
