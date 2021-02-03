@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.0.0-alpha.9
+@version     2.0.0-alpha.10
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -355,6 +355,10 @@ body[data-page="blog"] .page_title_wrapper {
         top:-0.2em;
         left:-0.05em;
     }
+	
+    #comments textarea {
+        height: 9em;
+    }
 
 /* SITE FOOTER */
 .app_footer, .nav_wrapper {
@@ -382,7 +386,7 @@ body[data-page="blog"] .page_title_wrapper {
 }
 
 .app_footer .about {
-    row-gap: 0;
+    grid-row-gap: 0;
 }
 
 .app_footer .about .logo {
