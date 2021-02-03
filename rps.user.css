@@ -388,7 +388,7 @@ body[data-page="blog"] .page_title_wrapper {
     grid-template-columns: repeat(7,auto);
 }
 
-if darkMode == 1 {
+if darkMode {
 /* DARK MODE */
 body:not(.docked) {
 	color: #a9a9a9;
