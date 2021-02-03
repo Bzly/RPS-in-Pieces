@@ -1,12 +1,14 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.0.0-alpha.8
+@version     2.0.0-alpha.9
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
 @author      Bzly
 @preprocessor uso
+
+@var checkbox darkMode "Dark Mode Enabled" 1
 ==/UserStyle== */
 
 @-moz-document domain("rockpapershotgun.com") {
@@ -387,7 +389,7 @@ body[data-page="blog"] .page_title_wrapper {
     grid-template-columns: repeat(7,auto);
 }
 
-
+if /*[[darkMode]]*/ == 1 {
 /* DARK MODE */
 body:not(.docked) {
 	color: #a9a9a9;
@@ -426,6 +428,7 @@ body:not(.docked) {
 
 article:not([data-article-type="features"]):not([data-article-type="reviews"]) .strapline {
     color: #a9a9a9;
+}
 }
 	
 }
