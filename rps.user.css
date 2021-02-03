@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.0.0-alpha.10
+@version     2.0.0-alpha.11
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -438,6 +438,14 @@ body:not(.docked) {
 
 article:not([data-article-type="features"]):not([data-article-type="reviews"]) .strapline {
     color: #a9a9a9;
+}
+	
+.article_body_content tr:nth-of-type(odd) {
+    background: #272727 !important;
+}
+    
+.article_body_content tr:nth-of-type(even) {
+    background: #333333 !important;
 }
 }
 	
