@@ -9,7 +9,7 @@
 @preprocessor stylus
 
 @var checkbox darkMode "Dark Mode Enabled" 1
-@var checbox dealsPosts "Deals Posts Enabled" 1
+@var checkbox dealsPosts "Deals Posts Enabled" 1
 ==/UserStyle== */
 
 @-moz-document domain("rockpapershotgun.com") {
