@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.0.0-alpha.12
+@version     2.0.0-alpha.13
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -295,20 +295,26 @@ body[data-page="blog"] .page_title_wrapper {
         width: unset;
     }
 
-    .article_footer .supporters_promo h3, .article_footer .supporters_promo p, .article_footer .supporters_promo .button {
+    .article_footer .supporters_promo h3, .article_footer .supporters_promo p {
         display: none;
     }
-
-    .article_footer .supporters_promo::after {
-        content: "Support RPS?"
+    
+    .article_footer .supporters_promo {
+        background: none;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .article_footer .supporters_promo .button {
+        font-size: 0;
+        background-color: #44208d80;
+        padding: 0.5rem 3rem;
     }
 
-    .article_footer .supporters_promo {
-        background-color: #44208d80;
-        padding: 1em 4em;
-        color: #a9a9a9dd;
-        font-size: 0.875rem;
-        margin:  auto;
+    .article_footer .supporters_promo .button::after {
+        font-size: 0.825rem;
+        color: #ddd;
+        content: "Support RPS"
     }
     
     /* Comments */
