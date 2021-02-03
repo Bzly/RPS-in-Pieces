@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.0.0-alpha.11
+@version     2.0.0-alpha.12
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -28,10 +28,23 @@
     width: 82%;
 }
 
-.excerpt, .article_body_content > p, #comments .guidelines, .post.live .what {
+.excerpt, .article_body_content, #comments .guidelines, .post.live .what {
     text-align:justify;
 	hyphens: auto;
 	line-height:1.4;
+}
+
+.article_body_content aside, .article_body_content .pullquote {
+    text-align: left
+}
+
+.article_body_content .pullquote {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.article_body_content aside ol li:not(:first-child), .article_body_content aside ul li:not(:first-child) {
+    margin-top: 0;
 }
 
 .sidebar, .sidebar .gn_sidebar {
