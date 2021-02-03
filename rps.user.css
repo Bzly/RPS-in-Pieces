@@ -1,12 +1,15 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.0.0-alpha.8
+@version     2.0.0-alpha.9
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
 @author      Bzly
-@preprocessor uso
+@preprocessor stylus
+
+@var checkbox darkMode "Dark Mode Enabled" 1
+@var checkbox dealsPosts "Deals Posts Enabled" 1
 ==/UserStyle== */
 
 @-moz-document domain("rockpapershotgun.com") {
@@ -39,6 +42,11 @@
     padding-right: 0 !important;
 }
 
+if not dealsPosts {
+	li article.summary[data-article-type="deals"] {
+	    display: none;
+	}
+}
 
 /* HOMEPAGE */
 body[data-page="homepage"] .spotlight .container {
@@ -387,7 +395,7 @@ body[data-page="blog"] .page_title_wrapper {
     grid-template-columns: repeat(7,auto);
 }
 
-
+if darkMode {
 /* DARK MODE */
 body:not(.docked) {
 	color: #a9a9a9;
@@ -426,6 +434,7 @@ body:not(.docked) {
 
 article:not([data-article-type="features"]):not([data-article-type="reviews"]) .strapline {
     color: #a9a9a9;
+}
 }
 	
 }
