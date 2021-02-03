@@ -6,7 +6,6 @@
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
 @author      Bzly
-@preprocessor uso
 
 @var checkbox darkMode "Dark Mode Enabled" 1
 ==/UserStyle== */
@@ -389,7 +388,7 @@ body[data-page="blog"] .page_title_wrapper {
     grid-template-columns: repeat(7,auto);
 }
 
-if /*[[darkMode]]*/ == 1 {
+if darkMode == 1 {
 /* DARK MODE */
 body:not(.docked) {
 	color: #a9a9a9;
