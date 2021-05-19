@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.0.0-alpha.16
+@version     2.0.0-alpha.17
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -30,8 +30,8 @@
 
 .excerpt, .article_body_content, #comments .guidelines, .post.live .what {
     text-align:justify;
-	hyphens: auto;
-	line-height:1.4;
+    hyphens: auto;
+    line-height:1.4;
 }
 
 .article_body_content aside, .article_body_content .pullquote {
@@ -56,9 +56,9 @@
 }
 
 if not dealsPosts {
-	li article.summary[data-article-type="deals"] {
-	    display: none;
-	}
+    li article.summary[data-article-type="deals"] {
+        display: none;
+    }
 }
 
 /* HOMEPAGE */
@@ -153,7 +153,7 @@ body[data-page="blog"] .page_title_wrapper {
 
 
     /* Nav */
-    .nav_primary a[href="/hardware"], .nav_primary a[href="/videos"], .nav_primary a[href="/guides"], .nav_secondary a[href="/topics/free-games"], .nav_secondary a[href="/deals"], .commercial.button_group {
+    .nav_primary a[href="/hardware"], .nav_primary a[href="/videos"], .nav_primary a[href="/guides"], .nav_secondary a[href="/topics/free-games"], .nav_secondary a[href="/deals"], .nav_secondary a[href="/podcasts"], .commercial.button_group {
         display: none;
     }
 
@@ -375,7 +375,7 @@ body[data-page="blog"] .page_title_wrapper {
         top:-0.2em;
         left:-0.05em;
     }
-	
+    
     #comments textarea {
         height: 9em;
     }
@@ -422,12 +422,12 @@ body[data-page="blog"] .page_title_wrapper {
 if darkMode {
 /* DARK MODE */
 body:not(.docked) {
-	color: #a9a9a9;
-	background: #161616 url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat !important;
+    color: #a9a9a9;
+    background: #161616 url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat !important;
 }
 
 #content, .app_header, .app_footer {
-	background: #212121 url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat !important;
+    background: #212121 url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat !important;
     border-color: #161616;
 }
 
@@ -459,7 +459,7 @@ body:not(.docked) {
 article:not([data-article-type="features"]):not([data-article-type="reviews"]) .strapline {
     color: #a9a9a9;
 }
-	
+    
 .article_body_content tr:nth-of-type(odd) {
     background: #272727 !important;
 }
@@ -467,19 +467,19 @@ article:not([data-article-type="features"]):not([data-article-type="reviews"]) .
 .article_body_content tr:nth-of-type(even) {
     background: #333333 !important;
 }
-	
+    
 .article[data-paywalled="true"] .article_body_content::after {
     background-image: linear-gradient(180deg,transparent,#212121);
 }
-	
+    
 .article_body_content figure figcaption {
     color: #a9a9a9aa;
     border-color: #555;
 }
-	
+    
 .article_body_content blockquote:not(.twitter-tweet):not(.pullquote) {
-	background: #161616 url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat;
+    background: #161616 url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat;
 }
 }
-	
+    
 }
