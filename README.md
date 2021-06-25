@@ -13,7 +13,7 @@ Additionally, it allows for you to turn the site into 'dark mode' and hide the '
 2. [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css)
 
 ## To-do
-* Dark mode styling for supporter articles (text too low contrast currently)
+* ~~Dark mode styling for supporter articles (text too low contrast currently)~~ - added in [#d1019db](https://github.com/Bzly/RPS-in-Pieces/commit/d1019db211863ff8cca3dc8ae1e25e127147eca8)
 * Check mobile view (it's probably terrible) and add @media stylings as necessary
 	* Stylus for Firefox Android doesn't work any more — are there actually any addons that do?
 * Work on the homepage
