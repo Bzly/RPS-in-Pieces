@@ -3,6 +3,8 @@ An alternative stylesheet for Rock Paper Shotgun.
 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css)
 
+![RPS article view in dark mode](article-example.jpg)
+
 ## What does it do?
 Tidies up the site design: removes strange blank panels, centres bits, removes excess padding, shrinks the site header and footer, removes the post-page 'shelves', etc.
 
