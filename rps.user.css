@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.0.0-alpha.17
+@version     2.0.0
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -14,6 +14,8 @@
 
 @-moz-document domain("rockpapershotgun.com") {
 
+/* This CSS _really_ needs a tidy up. Oh well. good_enough.jpg */
+    
 /* SITEWIDE */
 .advert_container {
     display: none !important;
@@ -183,7 +185,7 @@ body[data-page="blog"] .page_title_wrapper {
         border-radius: 0.3em;
     }
 
-    .nav_main .user_profile.signed_in .label {
+    .nav_main .user_profile.signed_in .label, .supporter_thanks {
         display: none;
     }
 
@@ -197,6 +199,12 @@ body[data-page="blog"] .page_title_wrapper {
 
     .nav_main form.search_box input {
         color: var(--color);
+    }
+    
+    .app_header .user_profile {
+        background: none;
+        border: none;
+        color: inherit;
     }
 
 
@@ -439,12 +447,18 @@ body:not(.docked) {
     --color: #9976E0;
 }
 
-.username .flair.supporter {
-    --color: #64409d;
-}
-
 .app_header .nav_secondary a, .app_header .nav_primary a, .app_footer nav:not(.social_follow) a, .app_footer nav:not(.social_follow) button {
     color: #a9a9a9;
+}
+
+.app_header .button, .article_header .supporter_message {
+    color: var(--color) !important;
+    border-color: var(--color) !important;
+}
+
+.article[data-premium=true], .summary[data-premium=true] {
+    --color: #9976E0;
+    --strap-color: #9976E0;
 }
 
 .article_header .title, .summary .name, .summary .title, .page_title {
@@ -481,5 +495,4 @@ article:not([data-article-type="features"]):not([data-article-type="reviews"]) .
     background: #161616 url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat;
 }
 }
-    
 }
