@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.0.0
+@version     2.0.1
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -258,7 +258,7 @@ body[data-page="blog"] .page_title_wrapper {
     }
 
     .article_footer .tagged_with h2 {
-        display: none;
+        display: none !important;
     }
 
     .article_footer .tagged_with ul {
@@ -269,9 +269,15 @@ body[data-page="blog"] .page_title_wrapper {
     .article_footer .tagged_with li:last-of-type a {
         padding-right: 0;
     }
-
-    .article_footer .tagged_with a {
-        padding: 0em 0.5em;
+    
+    .article_footer .tagged_with ul li a:after {
+        content: "" !important;
+    }
+    
+    .article_footer .tagged_with ul li:not(:last-child):after {
+        content: "/" !important;
+        padding: 0em 0.25em;
+        color: #3d434a;
     }
 
     .article_footer .author_bio .section_title {
