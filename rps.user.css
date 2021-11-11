@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.0.1
+@version     2.0.2
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -85,13 +85,10 @@ body[data-page="homepage"] .spotlight .container .secondary {
 }
 
 body[data-page="homepage"] .spotlight .container .secondary li {
-    padding-bottom: 3em;
+    padding-bottom: 2em;
 }
 
 body[data-page="homepage"] .spotlight .container .secondary::before {
-    content: "Latest News:";
-    font-size: 1.2em;
-    font-weight: bold;
     padding-bottom: 1em;
 }
 
@@ -102,15 +99,11 @@ body[data-page="homepage"] .view_archive {
 
 /* /LATEST */
 .blog {
-    max-width: 75%;
+    max-width: 65%;
 }
 
 body[data-page="blog"] .page_title_wrapper {
     display: none;
-}
-
-.blog .link_overlay {
-    height: 513px;
 }
 
 .blog .articles>li:not(:last-of-type) .excerpt {
@@ -125,6 +118,20 @@ body[data-page="blog"] .page_title_wrapper {
 .blog .summary .excerpt:before {
     margin-bottom: 1em;
 }
+
+.blog .thumbnail img {
+    width: 100% !important;
+    height: fit-content;
+}
+
+.blog .link_overlay {
+    height: min-content;
+}
+
+/* In case the 'feature' symbols need adjusting for img centering (but I decided to make the images 100% wide instead)
+.blog .symbol {
+    left: calc((100% - 690px) / 2);
+} */
 
 
 /* HEADER */
@@ -210,7 +217,7 @@ body[data-page="blog"] .page_title_wrapper {
 
 /* ARTICLE */
 .article_body {
-    max-width: 69%;
+    max-width: 65%;
 }
 
 .article_body_content {
@@ -260,21 +267,8 @@ body[data-page="blog"] .page_title_wrapper {
     .article_footer .tagged_with h2 {
         display: none !important;
     }
-
-    .article_footer .tagged_with ul {
-        float: right;
-        margin: 0;
-    }
-
-    .article_footer .tagged_with li:last-of-type a {
-        padding-right: 0;
-    }
     
-    .article_footer .tagged_with ul li a:after {
-        content: "" !important;
-    }
-    
-    .article_footer .tagged_with ul li:not(:last-child):after {
+    .article_footer .tagged_with li+li:before {
         content: "/" !important;
         padding: 0em 0.25em;
         color: #3d434a;
@@ -447,6 +441,10 @@ body:not(.docked) {
 
 :root, #comments .container .post[data-user-type=supporter] {
     --color: #00866B
+}
+    
+.summary .thumbnail:after {
+    background: inherit !important;
 }
 
 .app_header .username .flair.supporter {
