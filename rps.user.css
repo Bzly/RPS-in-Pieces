@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.0.7
+@version     2.0.8
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -345,7 +345,7 @@ body[data-page="blog"] .page_title_wrapper {
     #content textarea, #comments .preview {border-radius: 0 0 0.3em 0.3em;}  
 
     #comments .container .alert {
-        margin: 0 auto;
+        margin: 0.8em auto;
         color: #a9a9a9;
     }
 
