@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.0.6
+@version     2.0.7
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -518,6 +518,10 @@ body:not(.docked) {
     
 #comments .container .post.highlight>.what .markdown {
     background-color: inherit;
+}
+    
+#comments .container {
+    --accent-color: #a9a9a9;
 }
 
 textarea::placeholder {color: #a9a9a9 !important;}
