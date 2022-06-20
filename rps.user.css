@@ -515,6 +515,10 @@ body:not(.docked) {
     color: #a9a9a9;
     border-color: #00866b;
 }
+    
+#comments .container .post.highlight>.what .markdown {
+    background-color: inherit;
+}
 
 textarea::placeholder {color: #a9a9a9 !important;}
 
