@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.0.8
+@version     2.1.0
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -138,7 +138,7 @@ body[data-page="blog"] .page_title_wrapper {
 /* HEADER */
     /* Main header changes */
     header.app_header {
-        height: 7em;
+        min-height: 7em;
     }
 
     header.app_header > nav.nav_main {
@@ -146,7 +146,7 @@ body[data-page="blog"] .page_title_wrapper {
         max-width: 80em;
         padding: 0.8em 0;
         grid-template-columns: 16.5em auto 1fr auto;
-        max-height: 7em;
+        min-height: 7em;
     }
 
 
@@ -155,6 +155,7 @@ body[data-page="blog"] .page_title_wrapper {
         background: url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/logo_new_dark.png') no-repeat;
         background-size: contain;
         height: 5.4em;
+        margin: auto 0;
     }
 
     .logo > img {
@@ -188,18 +189,21 @@ body[data-page="blog"] .page_title_wrapper {
         display: block;
     }
     
-    input.sign_out {display: none;}
+    input.sign_out {float: right;}
     
-    .user_profile.signed_in .user_buttons {grid-template-columns: 1fr min-content;}
-    
-    .nav_main .signed_in .user_buttons > .button {
-        border: none !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        justify-content: end;
+    .user_profile.signed_in .user_buttons {
+        grid-template-columns: 1fr min-content;
+        width: min-content;
+        margin-left: auto;
     }
     
-    .nav_main .signed_in .user_buttons > .button:last-of-type {padding-left: 1em !important;}
+    .nav_main .signed_in .user_buttons > .button {
+        padding: 0.2em 0.5em !important;
+        margin: 0 !important;
+        justify-content: end;
+        border-radius: 0.3em;
+        font-size: 0.8em;
+    }
 
     .nav_main form.logout .button {
         padding: 0 0.5em;
@@ -215,7 +219,7 @@ body[data-page="blog"] .page_title_wrapper {
     }
 
     .nav_main .actions .username {
-        display: grid;
+        max-width: 14em;
     }
 
     .nav_main form.search_box input {
@@ -345,7 +349,7 @@ body[data-page="blog"] .page_title_wrapper {
     #content textarea, #comments .preview {border-radius: 0 0 0.3em 0.3em;}  
 
     #comments .container .alert {
-        margin: 0.8em auto;
+        margin: 0 auto;
         color: #a9a9a9;
     }
 
