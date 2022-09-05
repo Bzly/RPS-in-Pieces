@@ -59,7 +59,7 @@
 }
 
 if not dealsPosts {
-    li article.summary[data-article-type="deals"] {
+    li .summary[data-article-type="deals"] {
         display: none;
     }
 }
