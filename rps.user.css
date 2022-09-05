@@ -269,15 +269,15 @@ body[data-page="blog"] .page_title_wrapper {
 }
 
 .blog .strapline {
-	color: inherit;
+    color: inherit;
 }
 
 .embed_placeholder, #ot-sdk-btn.ot-sdk-show-settings {
-	background: #212121;
+    background: #212121;
 }
 
 .embed_placeholder {
-	border: 1px solid #161616;
+    border: 1px solid #161616;
 }
 
 
