@@ -10,6 +10,7 @@
 
 @var checkbox darkMode "Dark Mode Enabled" 1
 @var checkbox dealsPosts "Deals Posts Enabled" 1
+@var checkbox supportersOnlyPosts "Supporters-Only Posts Enabled" 1
 ==/UserStyle== */
 
 @-moz-document domain("rockpapershotgun.com") {
@@ -60,6 +61,12 @@
 
 if not dealsPosts {
     li .summary[data-article-type="deals"] {
+        display: none;
+    }
+}
+
+if not supportersOnlyPosts {
+    li .summary[data-premium="true"] {
         display: none;
     }
 }
