@@ -275,7 +275,7 @@ body[data-page="blog"] .page_title_wrapper {
     margin: 0 !important;
 }
 
-.blog .strapline {
+.blog div[data-article-type="news"] .strapline {
     color: inherit;
 }
 
