@@ -10,6 +10,7 @@
 
 @var checkbox darkMode "Dark Mode Enabled" 1
 @var checkbox dealsPosts "Deals Posts Enabled" 1
+@var checkbox supportersOnlyPosts "Supporters-Only Posts Enabled" 1
 ==/UserStyle== */
 
 @-moz-document domain("rockpapershotgun.com") {
@@ -59,7 +60,13 @@
 }
 
 if not dealsPosts {
-    li article.summary[data-article-type="deals"] {
+    li .summary[data-article-type="deals"] {
+        display: none;
+    }
+}
+
+if not supportersOnlyPosts {
+    li .summary[data-premium="true"] {
         display: none;
     }
 }
@@ -266,6 +273,18 @@ body[data-page="blog"] .page_title_wrapper {
 
 .bb_iawr {
     margin: 0 !important;
+}
+
+.blog div[data-article-type="news"] .strapline {
+    color: inherit;
+}
+
+.embed_placeholder, #ot-sdk-btn.ot-sdk-show-settings {
+    background: #212121;
+}
+
+.embed_placeholder {
+    border: 1px solid #161616;
 }
 
 
