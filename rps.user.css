@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.1.0
+@version     2.1.1
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -60,13 +60,13 @@
 }
 
 if not dealsPosts {
-    li .summary[data-article-type="deals"] {
+    [data-article-type="deals"] {
         display: none;
     }
 }
 
 if not supportersOnlyPosts {
-    li .summary[data-premium="true"] {
+    [data-premium="true"] {
         display: none;
     }
 }
