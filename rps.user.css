@@ -258,7 +258,7 @@ body[data-page="blog"] .page_title_wrapper {
     padding: 0 3em;
     margin-top: 1em;
     grid-row-gap: 1em;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr;
     grid-column-gap: 3em;
 }
 
