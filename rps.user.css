@@ -261,6 +261,10 @@ body[data-page="blog"] .page_title_wrapper {
     grid-template-columns: 1fr;
     grid-column-gap: 3em;
 }
+    
+.article_header .share_list li:not(:last-child) {
+    display: none;
+}
 
 .details .strapline {
     margin-top: 0.7em;
