@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.1.2
+@version     2.1.3
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -147,6 +147,10 @@ body[data-page="blog"] .page_title_wrapper {
     header.app_header {
         min-height: 7em;
     }
+    
+    .nav_primary, .nav_secondary {
+        align-self: center;
+    }
 
     header.app_header > nav.nav_main {
         width: 82%;
@@ -242,7 +246,7 @@ body[data-page="blog"] .page_title_wrapper {
 
 /* ARTICLE */
 .article_body {
-    max-width: 65%;
+    max-width: 40rem;
 }
 
 .article_body_content {
@@ -260,6 +264,10 @@ body[data-page="blog"] .page_title_wrapper {
     grid-row-gap: 1em;
     grid-template-columns: 1fr;
     grid-column-gap: 3em;
+}
+    
+article.article {
+    border-top: none !important;
 }
     
 .article_header .share_list li:not(:last-child) {
