@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.1.3
+@version     2.2.0
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -11,6 +11,7 @@
 @var checkbox darkMode "Dark Mode Enabled" 1
 @var checkbox dealsPosts "Deals Posts Enabled" 1
 @var checkbox supportersOnlyPosts "Supporters-Only Posts Enabled" 1
+@var checkbox socialIcons "Show Social Icons" 1
 ==/UserStyle== */
 
 @-moz-document domain("rockpapershotgun.com") {
@@ -67,6 +68,12 @@ if not dealsPosts {
 
 if not supportersOnlyPosts {
     [data-premium="true"] {
+        display: none;
+    }
+}
+    
+if not socialIcons {
+    .article ul.social_icons {
         display: none;
     }
 }
@@ -577,7 +584,7 @@ article:not([data-article-type="features"]):not([data-article-type="reviews"]) .
     background-image: linear-gradient(180deg,transparent,#212121);
 }
     
-.article_body_content figure figcaption {
+.article_body_content figure figcaption, .article_header figcaption, .article_header .social_share {
     color: #a9a9a9aa;
     border-color: #555;
 }
