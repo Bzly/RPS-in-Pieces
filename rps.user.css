@@ -514,6 +514,11 @@ if not articleAsides {
     grid-template-columns: repeat(7,auto);
 }
 
+/* hide 'buy our tee' slot */
+.smart-slot[data-mode="merch"] {
+    display: none;
+}
+
 if darkMode {
 /* DARK MODE */
 body:not(.docked) {
