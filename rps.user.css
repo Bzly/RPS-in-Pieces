@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.2.0
+@version     2.2.1
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -12,6 +12,7 @@
 @var checkbox dealsPosts "Deals Posts Enabled" 1
 @var checkbox supportersOnlyPosts "Supporters-Only Posts Enabled" 1
 @var checkbox socialIcons "Show Social Icons" 1
+@var checkbox articleAsides "Show Recommendation Asides" 1
 ==/UserStyle== */
 
 @-moz-document domain("rockpapershotgun.com") {
@@ -275,6 +276,12 @@ body[data-page="blog"] .page_title_wrapper {
     
 article.article {
     border-top: none !important;
+}
+
+if not articleAsides {
+    .article_body_content > aside.recommendation {
+        display: none;
+    }
 }
     
 .article_header .share_list li:not(:last-child) {
