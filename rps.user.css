@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.2.1
+@version     2.2.2
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -255,6 +255,7 @@ body[data-page="blog"] .page_title_wrapper {
 /* ARTICLE */
 .article_body {
     max-width: 40rem;
+    margin: 0 auto;
 }
 
 .article_body_content {
@@ -548,6 +549,10 @@ body:not(.docked) {
 
 .app_header .nav_secondary a, .app_header .nav_primary a, .app_footer nav:not(.social_follow) a, .app_footer nav:not(.social_follow) button {
     color: #a9a9a9;
+}
+
+.blog li:has(+li):has(.excerpt) .wrapper, .disclaimer+.article-container {
+    border: none;
 }
 
 .app_header .button, .article_header .supporter_message {
