@@ -454,6 +454,11 @@ body:not(.docked) {
     border-radius: 2em;
 }
 
+.footer {
+    color: var(--rpsip-font-std) !important;
+    padding: 2em !important;
+}
+
 textarea::placeholder {color: #a9a9a9 !important;}
 
 article:not([data-article-type="features"]):not([data-article-type="reviews"]) .strapline {
