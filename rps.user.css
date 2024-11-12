@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     2.2.2
+@version     3.0.0
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -322,159 +322,23 @@ if not articleAsides {
         max-width: 65%;
         grid-template-columns: 100%
     }
-
-    .article_footer .tagged_with {
-        margin: 0;
-        text-align: right;
-    }
-
-    .article_footer .tagged_with h2 {
-        display: none !important;
-    }
     
-    .article_footer .tagged_with li+li:before {
-        content: "/" !important;
-        padding: 0em 0.25em;
-        color: #3d434a;
-    }
 
-    .article_footer .author_bio .section_title {
-        margin: 1em 0 1em;
-    }
-
-    .article_footer .author_bio .name {
-        margin: 0;
-    }
-
-    .article_footer #comments .section_title {
-        margin: 1em 0 0.6em;
-    }
-
-    .article_footer .author_bio {
-        margin-bottom: 1em;
-        margin-top: 0;
-    }
-
-    #comments .guidelines, #comments .container {
-        margin-bottom: 1em;
-    }
-
-    #content_below {
+    #content_below, div.spcv_conversation-footer {
         display: none;
     }
 
-    .thread {
-        max-width: 100%;
-        width: unset;
-    }
-
-    .article_footer .supporters_promo h3, .article_footer .supporters_promo p {
-        display: none;
-    }
-    
-    .article_footer .supporters_promo {
-        background: none;
-        padding: 0;
-        margin: 0 auto;
-    }
-    
-    .article_footer .supporters_promo .button {
-        font-size: 0;
-        background-color: #44208d80;
-        padding: 0.5rem 3rem;
-    }
-
-    .article_footer .supporters_promo .button::after {
-        font-size: 0.825rem;
-        color: #ddd;
-        content: "Support RPS"
-    }
+    .smart-slot[data-mode="subscriptions"] {display: none;}
+        
+    .tagged_with {margin-top: 0}
     
     /* Comments */
-
-    #content textarea, #comments .preview {border-radius: 0 0 0.3em 0.3em;}  
-
-    #comments .container .alert {
+    #comments {
         margin: 0 auto;
-        color: #a9a9a9;
-    }
-
-    #comments .container .metadata {
-        grid-template-columns: auto 1fr auto;
-    }
-
-    #comments .username .scrim, #comments .container .post .when {
-        color: #555;
-    }
-
-    #comments .container .editing, #comments .container .inline_reply_form, #comments .container .what {
-        margin-top: 0.7em;
-    }
-
-    #comments .container .post {
-        margin-top: 1.2em;
-    }
-
-    #comments .container .button_group {
-        margin-top: 0.5em;
-    }
-
-    #comments .button {
-        border-radius: 0.3em !important;
-        font-size: 0.8rem;
-        padding: 0.3em 0.6em;
     }
     
-    #comments .button_group.tabbed:not(.post_form_nav) .button {
-         border-radius: 0 !important;
-         border-width: 1px 0;
-    }
-
-    #comments .button_group.tabbed:not(.post_form_nav) .button:first-of-type {
-        border-radius: 0.3em 0 0 0.3em !important;
-        border-width: 1px;
-    }
-
-    #comments .button_group.tabbed:not(.post_form_nav) .button:last-of-type {
-        border-radius: 0 0.3em 0.3em 0 !important;
-        border-width: 1px;
-    }
     
-
-    #comments .button_group.tabbed.post_form_nav .button:first-of-type {
-        border-radius: 0.3em 0 0 0 !important;
-        border-width: 1px;
-    }
-    
-    #comments .button_group.tabbed.post_form_nav .button:nth-of-type(2) {
-        border-radius: 0 0.3em 0 0 !important;
-        border-width: 1px;
-    }
-
-    #comments .button_group.tabbed.post_form_nav .button:last-of-type {
-        border-radius: 0.3em 0.3em 0 0 !important;
-        border-width: 1px;
-    }
-
-    #comments .post button.toggle {
-        width: 1em;
-        height: 1em;
-        left: -1.5em;
-    }
-
-    #comments .post button.toggle::after {
-        content: "–";
-        top:-0.2em;
-        left:-0.05em;
-    }
-    
-    #comments textarea {
-        height: 9em;
-    }
-    
-    #comments .preview {
-        height: fit-content;
-    }
+/*     
 
 /* SITE FOOTER */
 .app_footer, .nav_wrapper {
@@ -522,18 +386,30 @@ if not articleAsides {
 
 if darkMode {
 /* DARK MODE */
+
+:root {
+    --rpsip-font-std: #a9a9a9;
+    --rpsip-font-bright: #bbb;
+    
+    --rpsip-bg-dark: #161616 url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat;
+    --rpsip-bg-std: #212121 url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat;
+    
+    --rpsip-green: #00866b;
+    --rpsip-purple: #9976E0;
+}
+
 body:not(.docked) {
-    color: #a9a9a9;
-    background: #161616 url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat !important;
+    color: var(--rpsip-font-std);
+    background: var(--rpsip-bg-dark) !important;
 }
 
 #content, .app_header, .app_footer {
-    background: #212121 url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat !important;
-    border-color: #161616;
+    background: var(--rpsip-bg-std) !important;
+    border-color: var(--rpsip-bg-dark);
 }
 
-:root, #comments .container .post[data-user-type=supporter] {
-    --color: #00866B
+.section_title {
+    color: grey;
 }
 
 .username a {color: inherit;}
@@ -544,11 +420,11 @@ body:not(.docked) {
 }
 
 .app_header .username .flair.supporter {
-    --color: #9976E0;
+    --color: var(--rpsip-purple);
 }
 
 .app_header .nav_secondary a, .app_header .nav_primary a, .app_footer nav:not(.social_follow) a, .app_footer nav:not(.social_follow) button {
-    color: #a9a9a9;
+    color: var(--rpsip-font-std);
 }
 
 .blog li:has(+li):has(.excerpt) .wrapper, .disclaimer+.article-container {
@@ -561,32 +437,27 @@ body:not(.docked) {
 }
 
 .article[data-premium=true], .summary[data-premium=true] {
-    --color: #9976E0;
-    --strap-color: #9976E0;
+    --color: var(--rpsip-purple);
+    --strap-color: var(--rpsip-purple);
 }
 
 .article_header .title, .summary .name, .summary .title, .page_title {
-    color: #bbb;
+    color: var(--rpsip-font-bright);
 }
 
-#content textarea, #comments .preview {
-    background: #3d3d3d url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat;
-    color: #a9a9a9;
-    border-color: #00866b;
-}
-    
-#comments .container .post.highlight>.what .markdown {
-    background-color: inherit;
-}
-    
-#comments .container {
-    --accent-color: #a9a9a9;
+.poll_container, .poll_header, .poll_vote_wrapper, .question, .votes {color: var(--rpsip-font-std) !important; opacity: 0.8;}
+
+
+#comments {
+    background: #ffc0cbaa url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat;
+    padding: 0 2em;
+    border-radius: 2em;
 }
 
 textarea::placeholder {color: #a9a9a9 !important;}
 
 article:not([data-article-type="features"]):not([data-article-type="reviews"]) .strapline {
-    color: #a9a9a9;
+    color: var(--rpsip-font-std);
 }
     
 .article_body_content tr:nth-of-type(odd) {
@@ -598,7 +469,7 @@ article:not([data-article-type="features"]):not([data-article-type="reviews"]) .
 }
     
 .article[data-paywalled="true"] .article_body_content::after {
-    background-image: linear-gradient(180deg,transparent,#212121);
+    background-image: linear-gradient(180deg,transparent,var(--rpsip-bg-std));
 }
     
 .article_body_content figure figcaption, .article_header figcaption, .article_header .social_share {
@@ -608,12 +479,6 @@ article:not([data-article-type="features"]):not([data-article-type="reviews"]) .
     
 .article_body_content blockquote:not(.twitter-tweet):not(.pullquote) {
     background: #161616 url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat;
-}
-
-#comments .container .post .removed, #comments .container .post .username .name, .author_bio .name a {color:#a9a9a9}
-    
-#comments .container .post, #comments .container .filters {
-    border-color: #555 !important;
 }
 
 }
