@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        RPS In Pieces
 @namespace   Bzly
-@version     3.0.0
+@version     3.0.1
 @homepageURL https://github.com/Bzly/RPS-in-Pieces
 @updateURL   https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/rps.user.css
 @license     GPL-3.0-or-later
@@ -335,6 +335,7 @@ if not articleAsides {
     /* Comments */
     #comments {
         margin: 0 auto;
+        margin-bottom: 2em;
     }
     
     
@@ -406,6 +407,7 @@ body:not(.docked) {
 #content, .app_header, .app_footer {
     background: var(--rpsip-bg-std) !important;
     border-color: var(--rpsip-bg-dark);
+    border-bottom: 1px solid #161616;
 }
 
 .section_title {
